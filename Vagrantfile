@@ -66,6 +66,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source: "./install-on-mac-os-sierra.sh", destination: "/Users/vagrant/install-on-mac-os-sierra.sh"
   config.vm.provision "file", source: "./.secrets.sh", destination: "/Users/vagrant/.secrets.sh"
   config.vm.provision "file", source: "./patches/python.cmake.patch", destination: "/Users/vagrant/patches/python.cmake.patch"
+  config.vm.provision "file", source: "./patches/muongun-histogram.cxx.patch", destination: "/Users/vagrant/patches/muongun-histogram.cxx.patch"
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     whoami
     cd
