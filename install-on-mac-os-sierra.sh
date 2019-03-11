@@ -47,7 +47,9 @@ if [ ! -d $ICESIM_ROOT/src ]; then
   svn --username $SVN_ICECUBE_USERNAME --password $SVN_ICECUBE_PASSWORD co $SVN/meta-projects/simulation/releases/$RELEASE/ $ICESIM_ROOT/src
 fi
 
-# TODO: Patch cmake file to find m version of python
+# Patch cmake file to find pymalloc version of python installed by homebrew
+# https://github.com/fiedl/hole-ice-install/issues/1
+patch $ICESIM_ROOT/src/cmake/tools/python.cmake < ./patches/python.cmake.patch
 
 # Build the release (debug)
 mkdir -p $ICESIM_ROOT/debug_build
