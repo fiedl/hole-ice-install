@@ -27,6 +27,10 @@ pip install scipy
 # Install packages needed for building icecube-simulation
 brew install cmake gsl cfitsio
 
+# Install qt5 needed for steamshovel event display viewer
+brew info qt
+brew install qt
+
 # This is where the icecube software will live
 export ICECUBE_ROOT="$HOME/icecube/software"
 
