@@ -4,7 +4,7 @@ This repository provides reproducible install instructions for the hole-ice code
 
 ## Installation on macOS
 
-The file [install-on-mac-os-sierra.sh](install-on-mac-os-sierra.sh) contains instructions on how to install the IceCube-Simulation Framework with the hole-ice additions on macOS Sierra.
+The file [install-on-mac-os-sierra.sh](install-on-mac-os-sierra.sh) contains instructions on how to install the icecube-simulation framework with the hole-ice additions on macOS Sierra.
 
 ## Automated Build Using Vagrant
 
