@@ -36,3 +36,10 @@ vagrant up
 
 After changing the install scripts, rerun via `vagrant provision` or `vagrant reload --provision`.
 
+## Additional Resources
+
+- [IceCube documentation on installing on OS X with Python 2](http://software.icecube.wisc.edu/documentation/projects/cmake/supported_platforms/osx.html)
+- [Installing icecube-simulation V05-00-07 with Python 2 on macOS Sierra](https://github.com/fiedl/hole-ice-study/blob/master/notes/2016-11-15_Installing_IceSim_on_macOS_Sierra.md)
+- [Installing icecube-simulation V05-00-07 with Python 2 in Zeuthen](https://github.com/fiedl/hole-ice-study/blob/master/notes/2018-01-23_Installing_IceSim_in_Zeuthen.md)
+- Hole-ice study: https://github.com/fiedl/hole-ice-study
+- Hole-ice example scripts: https://github.com/fiedl/hole-ice-scripts
