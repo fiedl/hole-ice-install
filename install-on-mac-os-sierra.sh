@@ -73,3 +73,6 @@ make -j 6
 # ./env-shell.sh
 # make -j 2
 
+# Make sure to deactivate opencl kernel caching.
+# See: https://github.com/fiedl/hole-ice-study/issues/15
+export CUDA_CACHE_DISABLE=1
