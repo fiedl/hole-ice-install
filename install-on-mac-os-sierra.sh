@@ -53,11 +53,11 @@ fi
 
 # Patch cmake file to find pymalloc version of python installed by homebrew
 # https://github.com/fiedl/hole-ice-install/issues/1
-patch --batch $ICESIM_ROOT/src/cmake/tools/python.cmake < ./patches/python.cmake.patch
+patch --force $ICESIM_ROOT/src/cmake/tools/python.cmake < ./patches/python.cmake.patch
 
 # Patch muongun pybindings to add missing static cast
 # https://github.com/fiedl/hole-ice-install/issues/2
-patch --batch $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patches/muongun-histogram.cxx.patch
+patch --force $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patches/muongun-histogram.cxx.patch
 
 # Build the release (debug)
 mkdir -p $ICESIM_ROOT/debug_build
