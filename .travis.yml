@@ -1,7 +1,7 @@
 os: osx
 
 before_script:
-  - "brew uninstall python"
+  - "brew uninstall python gdal numpy postgis"
 
 script: "bash -v -e ./install-on-mac-os-sierra.sh"
 
