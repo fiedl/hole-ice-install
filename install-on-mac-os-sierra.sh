@@ -73,12 +73,12 @@ make -j 6
 # ./env-shell.sh
 # make -j 2
 
-# Get clsim fork with hole ice
-# https://github.com/fiedl/clsim
-rm -r $ICESIM_ROOT/src/clsim
-git clone https://github.com/fiedl/clsim.git $ICESIM_ROOT/src/clsim
-cd $ICESIM_ROOT/debug_build
-make
+# # Get clsim fork with hole ice
+# # https://github.com/fiedl/clsim
+# rm -r $ICESIM_ROOT/src/clsim
+# git clone https://github.com/fiedl/clsim.git $ICESIM_ROOT/src/clsim
+# cd $ICESIM_ROOT/debug_build
+# make
 
 # Make sure to deactivate opencl kernel caching.
 # See: https://github.com/fiedl/hole-ice-study/issues/15
