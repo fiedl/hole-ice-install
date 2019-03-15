@@ -47,7 +47,9 @@ export ICESIM=$ICESIM_ROOT/debug_build
 # Get icecube-simulation code from svn repository
 mkdir -p $ICESIM_ROOT
 if [ ! -d $ICESIM_ROOT/src ]; then
-  source .secrets.sh
+  if [[ -z $SVN_ICECUBE_USERNAME ]]; then
+    source .secrets.sh
+  fi
   svn --username $SVN_ICECUBE_USERNAME --password $SVN_ICECUBE_PASSWORD co $SVN/meta-projects/simulation/releases/$RELEASE/ $ICESIM_ROOT/src
 fi
 
