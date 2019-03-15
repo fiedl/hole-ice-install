@@ -1,5 +1,8 @@
 os: osx
 
+env:
+  - SVN_ICECUBE_USERNAME="icecube"
+
 before_script:
   - "brew uninstall python gdal numpy postgis"
   - "brew uninstall boost cgal sfcgal"
