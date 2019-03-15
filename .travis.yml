@@ -1,4 +1,7 @@
 os: osx
 
+before_script:
+  - "brew uninstall python"
+
 script: "bash -v -e ./install-on-mac-os-sierra.sh"
 
