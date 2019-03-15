@@ -65,7 +65,7 @@ patch --force $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patc
 mkdir -p $ICESIM_ROOT/debug_build
 cd $ICESIM_ROOT/debug_build
 cmake -D CMAKE_BUILD_TYPE=Debug -D SYSTEM_PACKAGES=true -D CMAKE_BUILD_TYPE:STRING=Debug ../src
-./env-shell.sh
+source ./env-shell.sh
 make -j 6
 
 # # Build the release
