@@ -3,6 +3,7 @@ os: osx
 before_script:
   - "brew uninstall python gdal numpy postgis"
   - "brew uninstall boost cgal sfcgal"
+  - "brew uninstall cmake"
 
 script: "bash -v -e ./install-on-mac-os-sierra.sh"
 
