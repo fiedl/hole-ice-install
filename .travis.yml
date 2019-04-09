@@ -2,6 +2,13 @@ os: osx
 
 env:
   - SVN_ICECUBE_USERNAME="icecube"
+  - SVN_ICECUBE_USERNAME="icecube"
+    EXCLUDE_PROJECTS="genie-icetray"
+  - SVN_ICECUBE_USERNAME="icecube"
+    EXCLUDE_PROJECTS="PROPOSAL"
+  - SVN_ICECUBE_USERNAME="icecube"
+    EXCLUDE_PROJECTS="cmc"
+  - SVN_ICECUBE_USERNAME="icecube"
     EXCLUDE_PROJECTS="genie-icetray PROPOSAL cmc"
 
 before_script:
