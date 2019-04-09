@@ -57,7 +57,7 @@ fi
 # which is used on travis to avoid the execution-time limit
 if [[ ! -z $EXCLUDE_PROJECTS ]]; then
   for project in $EXCLUDE_PROJECTS; do
-    rm -r $ICESIM_ROOT/src/$project
+    rm -rf $ICESIM_ROOT/src/$project
   done
 fi
 
