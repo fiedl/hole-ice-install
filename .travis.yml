@@ -5,11 +5,11 @@ env:
   - SVN_ICECUBE_USERNAME="icecube"
     EXCLUDE_PROJECTS="genie-icetray"
   - SVN_ICECUBE_USERNAME="icecube"
-    EXCLUDE_PROJECTS="PROPOSAL"
+    EXCLUDE_PROJECTS="PROPOSAL polyplopia"
   - SVN_ICECUBE_USERNAME="icecube"
     EXCLUDE_PROJECTS="cmc"
   - SVN_ICECUBE_USERNAME="icecube"
-    EXCLUDE_PROJECTS="genie-icetray PROPOSAL cmc"
+    EXCLUDE_PROJECTS="genie-icetray PROPOSAL polyplopia cmc"
 
 before_script:
   - "brew uninstall python gdal numpy postgis"
