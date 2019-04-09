@@ -69,6 +69,12 @@ patch --force $ICESIM_ROOT/src/cmake/tools/python.cmake < ./patches/python.cmake
 # https://github.com/fiedl/hole-ice-install/issues/2
 patch --force $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patches/muongun-histogram.cxx.patch
 
+# Patch cmake file to drop requirement of the boost_signals library,
+# which has been dropped in boost 1.69
+# https://github.com/fiedl/hole-ice-install/issues/3
+# https://code.icecube.wisc.edu/projects/icecube/ticket/2232
+patch --force $ICESIM_ROOT/src/cmake/tools/boost.cmake < ./patches/boost.cmake.patch
+
 # Build the release (debug)
 mkdir -p $ICESIM_ROOT/debug_build
 cd $ICESIM_ROOT/debug_build
