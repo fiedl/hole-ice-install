@@ -3,6 +3,10 @@ os: osx
 env:
   - SVN_ICECUBE_USERNAME="icecube"
 
+matrix:
+  include:
+    - env: EXCLUDE_PROJECTS="genie-icetray PROPOSAL cmc"
+
 before_script:
   - "brew uninstall python gdal numpy postgis"
   - "brew uninstall boost cgal sfcgal"
