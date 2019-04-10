@@ -53,6 +53,14 @@ if [ ! -d $ICESIM_ROOT/src ]; then
   svn --username $SVN_ICECUBE_USERNAME --password $SVN_ICECUBE_PASSWORD co $SVN/meta-projects/simulation/releases/$RELEASE/ $ICESIM_ROOT/src
 fi
 
+# Get the monopole-generator code
+if [ ! -d $ICESIM_ROOT/src/monopole-generator ]; then
+  if [[ -z $SVN_ICECUBE_USERNAME ]]; then
+    source .secrets.sh
+  fi
+  svn --username $SVN_ICECUBE_USERNAME --password $SVN_ICECUBE_PASSWORD co $SVN/projects/monopole-generator/trunk/ $ICESIM_ROOT/src/monopole-generator
+fi
+
 # Exclude projects if requested by environment variable,
 # which is used on travis to avoid the execution-time limit
 if [[ ! -z $EXCLUDE_PROJECTS ]]; then
