@@ -9,5 +9,6 @@ before_script:
   - "brew uninstall boost cgal sfcgal"
   - "brew uninstall cmake"
 
+# https://github.com/fiedl/hole-ice-install/blob/master/install-on-mac-os-sierra.sh
 script: "bash -v -e ./install-on-mac-os-sierra.sh"
 
