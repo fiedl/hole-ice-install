@@ -2,8 +2,7 @@ os: osx
 
 env:
   - SVN_ICECUBE_USERNAME="icecube"
-  - SVN_ICECUBE_USERNAME="icecube"
-    EXCLUDE_PROJECTS="genie-icetray PROPOSAL polyplopia cmc neutrino-generator WaveCalibrator g4-tankresponse"
+    EXCLUDE_PROJECTS="genie-icetray PROPOSAL polyplopia cmc neutrino-generator WaveCalibrator g4-tankresponse DOMLauncher"
 
 before_script:
   - "brew uninstall python gdal numpy postgis"
