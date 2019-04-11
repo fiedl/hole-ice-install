@@ -4,7 +4,7 @@ env:
   - SVN_ICECUBE_USERNAME="icecube"
     EXCLUDE_PROJECTS="genie-icetray PROPOSAL polyplopia cmc neutrino-generator WaveCalibrator g4-tankresponse DOMLauncher vuvuzela MuonGun earthmodel-service astro"
   - SVN_ICECUBE_USERNAME="icecube"
-    EXCLUDE_PROJECTS="phys-services hdfwriter topsimulator corsika-reader ice-models ppc trigger-sim daq-decode icepick production-histograms DomTools dataclasses icesim-tools rootwriter wavedeform dataio weighting docs interfaces sim-services wimpsim-reader simclasses examples-simulation payload-parsing simprod-scripts filter-tools photonics-service steamshovel clsim photospline tableio monopole-generator"
+    EXCLUDE_PROJECTS="phys-services hdfwriter topsimulator corsika-reader ice-models ppc trigger-sim daq-decode icepick production-histograms DomTools icesim-tools rootwriter wavedeform dataio weighting docs interfaces sim-services wimpsim-reader simclasses examples-simulation payload-parsing simprod-scripts filter-tools photonics-service steamshovel clsim photospline tableio monopole-generator"
 
 before_script:
   - "brew uninstall python gdal numpy postgis"
