@@ -75,7 +75,9 @@ patch --force $ICESIM_ROOT/src/cmake/tools/python.cmake < ./patches/python.cmake
 
 # Patch muongun pybindings to add missing static cast
 # https://github.com/fiedl/hole-ice-install/issues/2
-patch --force $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patches/muongun-histogram.cxx.patch
+if [[ -d $ICESIM_ROOT/src/MuonGun ]]; then
+  patch --force $ICESIM_ROOT/src/MuonGun/private/pybindings/histogram.cxx < ./patches/muongun-histogram.cxx.patch
+fi
 
 # Patch cmake file to drop requirement of the boost_signals library,
 # which has been dropped in boost 1.69
