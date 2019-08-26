@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-10.12
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run build script for macOS Sierra
+      run: |
+        ./install-on-mac-os-sierra.sh
+      env:
+        - SVN_ICECUBE_USERNAME: icecube
