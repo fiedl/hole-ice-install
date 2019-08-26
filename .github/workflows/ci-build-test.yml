@@ -13,4 +13,4 @@ jobs:
       run: |
         ./install-on-mac-os-sierra.sh
       env:
-        - SVN_ICECUBE_USERNAME: icecube
+        SVN_ICECUBE_USERNAME: icecube
