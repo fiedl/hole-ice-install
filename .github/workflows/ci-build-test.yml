@@ -5,10 +5,11 @@ on: [push]
 jobs:
   build:
 
-    runs-on:
-      - macOS-10.12
-      - macOS-10.13
-      - macOS-10.14
+    strategy:
+      matrix:
+        platform: [macOS-10.12, macOS-10.13, macOS-10.14]
+
+    runs-on: ${{ matrix.platform }}
     
     steps:
     - uses: actions/checkout@v1
