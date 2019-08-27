@@ -15,6 +15,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run build script for macOS Sierra
       run: |
-        ./install-on-mac-os-sierra.sh
+        bash -v -e ./install-on-mac-os-sierra.sh
       env:
         SVN_ICECUBE_USERNAME: icecube
