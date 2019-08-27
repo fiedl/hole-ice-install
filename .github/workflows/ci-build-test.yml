@@ -17,4 +17,6 @@ jobs:
       run: |
         bash -v -e ./install-on-mac-os-sierra.sh
       env:
+        SVN: ${{ secrets.SVN }}
         SVN_ICECUBE_USERNAME: icecube
+        SVN_ICECUBE_PASSWORD: ${{ secrets.SVN_ICECUBE_PASSWORD }}
