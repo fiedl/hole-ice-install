@@ -18,7 +18,7 @@ brew info boost
 brew install fiedl/homebrew-icecube/boost@1.69
 brew info boost-python
 brew info boost-python3
-brew install boost-python3
+brew install fiedl/homebrew-icecube/boost-python3@1.69
 
 # Install python packages
 pip install numpy
