@@ -30,6 +30,11 @@ brew install cmake gsl cfitsio
 # Install qt5 needed for steamshovel event display viewer
 brew info qt
 brew install qt
+#brew install pyqt
+
+## Install packages from icecube sources, e.g. random number generator
+#brew tap IceCube-SPNO/homebrew-icecube
+#brew install pal sprng2 cppzmq
 
 # This is where the icecube software will live
 export ICECUBE_ROOT="$HOME/icecube/software"
