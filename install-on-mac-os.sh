@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script provides instructions on how to install the icecube-simulation framework on macOS Sierra.
+# This script provides instructions on how to install the icecube-simulation framework on macOS.
 # https://github.com/fiedl/hole-ice-install
 
 # Install Homebrew package manager (http://brew.sh):

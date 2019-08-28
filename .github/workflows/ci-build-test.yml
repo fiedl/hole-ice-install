@@ -8,13 +8,13 @@ jobs:
 
     strategy:
       matrix:
-        platform: [macOS-10.14, macOS-10.13, macOS-10.12]
-    
+        platform: [macOS-10.14]
+
     steps:
     - uses: actions/checkout@v1
-    - name: Run build script for macOS Sierra
+    - name: Run build script for macOS
       run: |
-        bash -v -e ./install-on-mac-os-sierra.sh
+        bash -v -e ./install-on-mac-os.sh
       env:
         SVN: ${{ secrets.SVN }}
         SVN_ICECUBE_USERNAME: icecube
