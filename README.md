@@ -1,5 +1,6 @@
 # Hole-Ice-Install
 
+[![Build Status](https://github.com/fiedl/hole-ice-install/workflows/CI/badge.svg)](https://github.com/fiedl/hole-ice-install/actions)
 [![Build Status](https://travis-ci.org/fiedl/hole-ice-install.svg?branch=master)](https://travis-ci.org/fiedl/hole-ice-install)
 
 This repository provides reproducible install instructions for the hole-ice code and the icecube-simulation framework related to https://github.com/fiedl/hole-ice-study and https://github.com/fiedl/hole-ice-scripts.
