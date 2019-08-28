@@ -15,7 +15,7 @@ export PATH=/usr/local/opt/python/libexec/bin:$PATH
 
 # Install boost with python bindings
 brew info boost
-brew install boost
+brew install fiedl/homebrew-icecube/boost@1.69
 brew info boost-python
 brew info boost-python3
 brew install boost-python3
