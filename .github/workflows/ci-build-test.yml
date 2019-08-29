@@ -12,10 +12,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run build script for macOS
-      run: |
-        bash -v -e ./install-on-mac-os.sh
+    - name: Install required system packages
+      run: bash -v -e ./install-on-mac-os.sh
       env:
+        BUILD_STEP: SYSTEM_PACKAGES
+    - name: Build icecube-simulation framework
+      run: bash -v -e ./install-on-mac-os.sh
+      env:
+        BUILD_STEP: ICECUBE_SIMULATION_BUILD
         SVN: ${{ secrets.SVN }}
         SVN_ICECUBE_USERNAME: icecube
         SVN_ICECUBE_PASSWORD: ${{ secrets.SVN_ICECUBE_PASSWORD }}
+    - name: Build with clsim fork supporting hole ice
+      run: bash -v -e ./install-on-mac-os.sh
+      env:
+        BUILD_STEP: CLSIM_WITH_HOLE_ICE
